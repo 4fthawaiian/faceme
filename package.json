@@ -22,10 +22,10 @@
     "@angular/router": "^18.0.0",
     "@tailwindcss/postcss": "^4.0.8",
     "face-api.js": "^0.22.2",
+    "heroicons": "^2.2.0",
     "ngx-async-click": "^2.1.1",
     "postcss": "^8.5.3",
     "rxjs": "~7.8.0",
-    "tailwindcss": "^4.0.8",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },
