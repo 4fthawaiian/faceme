@@ -1,0 +1,10 @@
+.two-columns-grid {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: .2fr .2fr
+}
+
+/* columns */
+.two-columns-grid > * {
+  padding:1rem;
+}
