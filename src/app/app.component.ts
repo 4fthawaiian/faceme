@@ -149,11 +149,11 @@ export class AppComponent implements OnInit, AfterViewInit {
     const refFaces = await faceapi.extractFaces(referenceImg.nativeElement, [referenceDetection as faceapi.FaceDetection]);
     const refFace = refFaces[refFaces.length - 1];
 
-    // this.facesDisplay.nativeElement.innerHTML = "";
-    // this.facesDisplay.nativeElement
-    //   .append(userFace);
-    // this.facesDisplay.nativeElement
-    //   .append(refFace);
+    this.facesDisplay.nativeElement.innerHTML = "";
+    this.facesDisplay.nativeElement
+      .append(userFace);
+    this.facesDisplay.nativeElement
+      .append(refFace);
 
     faceapi.computeFaceDescriptor(refFace).then(referenceDescriptor => {
       const reference = referenceDescriptor as Float32Array;
