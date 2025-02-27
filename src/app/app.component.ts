@@ -83,8 +83,8 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.detected = false;
     let that = this;
     let videoOptions = {
-        width: { min: 640, ideal: 1280, max: 1920 },
-        height: { min: 480, ideal: 720, max: 1080 }
+        width: { min: 640, ideal: window.innerWidth, max: 1920 },
+        height: { min: 480, ideal: window.innerHeight, max: 1080 }
       };
     let stream = await navigator.mediaDevices.getUserMedia({ audio: false, video: videoOptions });
     if(that.mediaStream?.getVideoTracks()[0] && that.chosen && that.mediaStream.getVideoTracks()[0].readyState && that.mediaStream.getVideoTracks()[0].readyState == "ended"){
